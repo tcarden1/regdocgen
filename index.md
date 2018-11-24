@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+{% for page in site.pages %}
+  <h2><a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
+{% endfor %}
